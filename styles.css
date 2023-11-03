@@ -84,16 +84,10 @@ footer{
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
    padding: 20px;
-   margin: 20px;
+   margin-right: 15px;
    width: 35%;
 }
 
-.demos td {
-    text-align: center;
-}
-.commercialdemo {
-    margin-left: 100px;    
-}
 
   .studio {
     border: 1px solid #ccc;
@@ -101,26 +95,27 @@ footer{
     display: inline-flex;
     width: 65%;
     max-height: 100%;
-    padding: 20px;
   }
   .studio img{
+        margin-left: 15px;
         max-width: 300px;
   }
   .demostudio{
     display: inline-flex;
+    width: 100%;
   }
   .studioimage{
     margin-top: 10%;
   }
   .studiotext{
-    margin: 15px;
+    margin-left: 30px;
+    margin-top: 15px;
     font-size: 18px;
   }
   .photo-reel-container {
     width: 100%; /* Set your desired width */
     overflow: hidden;
-    padding: 20px;
-    
+    padding: 0px;
 }
   .photo-reel {
     margin-top: 40px;
@@ -192,3 +187,21 @@ footer{
 .contact-section strong {
     font-weight: bold;
 }
+
+.recentroles{
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    text-align: center;
+}
+.role-container{
+    display: inline-flex;
+}
+.role{ 
+    width: 320px;
+    padding: 10px;
+    text-align: center;
+}
+.role img{
+    width: 100%;
+    }
