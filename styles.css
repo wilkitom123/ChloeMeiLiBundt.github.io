@@ -54,29 +54,35 @@ footer{
 }
 .container {
     background-color: rgb(56, 54, 54);
-    display: grid;
+    max-width: 3000px; /* Set a max width if needed */
+    width: 3000px;
     align-items: center; 
-    grid-template-columns: 50% 50%;
-    column-gap: 10px;
-    margin-left: -15%;
     max-height: fit-content;
     color: white;
     padding-bottom: 100px;
+
+}
+.subcontain{
+    display: inline-flex;
+    width: 60%;
+    margin-left: 10%;
 }
 .text{
-    margin-right: 50%;
     text-align: center;
     font-size: 20px;
+    margin: 50px;
+    
+}
+.image2{
+    margin-top: 50px;
 }
 .image{
-    margin-left: auto;
-    margin-right: 50px;
-    margin-top: 50px
+    margin-top: 110px
+    
 }
-.container img{
+.container  img{
     max-width: 400px;
     border-radius: 8px;
-    
 }
 .indexbody{
     background-color: white;
