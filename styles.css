@@ -1,8 +1,8 @@
 body{
     background: white;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 /* Header */
 header{
@@ -20,7 +20,6 @@ header div{
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif; 
 }
-
 .navigation {
     width: 600px;
     text-align: right;
@@ -28,6 +27,10 @@ header div{
 }
 header nav{
     width: 600px;
+}
+audio{
+    border: 1px solid grey;
+    border-radius: 30px;
 }
 header nav a{
     text-decoration: none;
@@ -38,7 +41,6 @@ header nav a{
 header nav a:hover{
     color: grey;
 }
-
 header nav li{
     display: inline-block;
     margin: 0 20px 0 0;
@@ -56,11 +58,11 @@ footer{
     align-items: center; 
     grid-template-columns: 50% 50%;
     column-gap: 10px;
-    margin-left: -25%;
+    margin-left: -15%;
     max-height: fit-content;
     color: white;
     padding-bottom: 100px;
-   }
+}
 .text{
     margin-right: 50%;
     text-align: center;
@@ -72,7 +74,9 @@ footer{
     margin-top: 50px
 }
 .container img{
-    max-width: 300px;
+    max-width: 400px;
+    border-radius: 8px;
+    
 }
 .indexbody{
     background-color: white;
@@ -83,48 +87,48 @@ footer{
 .demos{
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
-   padding: 20px;
-   margin-right: 15px;
-   width: 35%;
+    padding: 20px;
+    margin-right: 15px;
+    width: 35%;
+    border-radius: 8px;
 }
-
-
-  .studio {
+.studio {
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     display: inline-flex;
     width: 65%;
     max-height: 100%;
-  }
-  .studio img{
-        margin-left: 15px;
-        max-width: 300px;
-  }
-  .demostudio{
+    border-radius: 8px;
+}
+.studio img{
+    margin-left: 15px;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.demostudio{
     display: inline-flex;
     width: 100%;
-  }
-  .studioimage{
+}
+.studioimage{
     margin-top: 10%;
-  }
-  .studiotext{
-    margin-left: 30px;
-    margin-top: 15px;
+}
+.studiotext{
+    margin-left: 9px;
     font-size: 18px;
-  }
-  .photo-reel-container {
+}
+.photo-reel-container {
     width: 100%; /* Set your desired width */
     overflow: hidden;
     padding: 0px;
 }
-  .photo-reel {
+.photo-reel {
     margin-top: 40px;
     margin-bottom: 40px;
     white-space: nowrap;
     animation: scroll 20s linear infinite;
     
 }
-
 .photo {
     display: inline-block;
     margin: 10px;
@@ -132,13 +136,12 @@ footer{
     height: 200px;
     overflow: hidden;
 }
-
 .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
-
 @keyframes scroll {
     0% {
         transform: translateX(100%);
@@ -147,7 +150,47 @@ footer{
         transform: translateX(-340%);
     }
 }
-
+.recentroles{
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+.role-container{
+    display: inline-flex;
+}
+.role{ 
+    width: 320px;
+    padding: 10px;
+    text-align: center;
+    
+}
+.role img{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.exampleroles{
+    margin-top: 50px;
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
+.video-role-container{
+    display: inline-flex;
+}
+.rolemp4{
+    margin: 50px;
+}
+.roleyt{
+    margin: 50px 50px 50px 50px;
+}
+.roleyt audio{
+    margin-top: 50px;
+}
 .Contact-Section{
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
@@ -157,51 +200,46 @@ footer{
 .contactimage img{
     width: 100%;
 }
-
 .contact-section {
     width: 300px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .contact-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .contact-section ul {
     list-style: none;
     padding: 0;
 }
-
 .contact-section li {
     margin-bottom: 10px;
     text-align: center;
 }
-
 .contact-section strong {
     font-weight: bold;
 }
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
 
-.recentroles{
-    border: 1px solid #ccc;
-    background-color: rgb(235, 234, 234);
-    width: 100%;
-    text-align: center;
+.download-button:hover {
+    background-color: rgb(66, 66, 66);
 }
-.role-container{
-    display: inline-flex;
-}
-.role{ 
-    width: 320px;
-    padding: 10px;
-    text-align: center;
-}
-.role img{
-    width: 100%;
-    }
