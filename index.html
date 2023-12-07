@@ -4,14 +4,14 @@
         <link rel="stylesheet" href="styles.css">
         <script src="main.js"></script>
         <meta charset="UTF-8">
+        <!-- addd favicon -->
+        <link rel="icon" href="public/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chloe Mei-li Bundt</title>
     </head>
-    <body>
-        <header>
-            <div>                     
-                <div class="navbar">  
-                    <nav>
+    <body>        
+        <header>       
+                    <nav class="fixed-navbar">
                         <div class ="icon"> 
                             <a href="index.html">Chloe Mei-li Bundt</a>
                         </div>   
@@ -23,34 +23,46 @@
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </nav>
-                </div>  
-            </div>
         </header>        
-        <div class="container" id="container">           
-            <div class="subcontain">
-                <div class="subsubcontain">
-                    <div class="image">
-                        <img src="KoreTopPic1.jpg">
-                    </div>
+        <div class="container main-content" id="container">     
+            <div class="intro">
+            <div class="subcontain hero1">
+
                     <div class="text">
                     <h2>Chloe Mei-li Bundt</h2>
                     <p>&emsp; A full-time citizen of the internet, Chloe has been occupying broadcasting and performance-based industries for as long as they can remember. Growing up first as a model, then eSports commentator/caster, video game livestreamer, novelist, and--inbetween--a fine-dining server, it's safe to say they've more than dabbled in a myriad of social-based, creative, and performance-oriented arenas. With family spread across various international borders, this has not only given Chloe a well-rounded perspective of the world but also, some really interesting reads.</p>
 
+                    </div>
+                    <div class="image" id="hero-img1">
+                        <img src="public/KoreTopPic1.jpg">
+                        
+                    </div>
+                </div>
+
+                    <div class="subcontain hero2">
+
+                        <div class="text">
+
+                        
                     <p>&emsp;Chloe is keenly aware of the value of clear communication and expectations, and how a personal touch can add to a professional relationship. Additionally, as an avid consumer of video games, and various TV shows, they also are incredibly well-practiced at mimicry and have a deep understanding for context in text-based dialogue. Their specialties range from children voices to compelling character reads, and they excel in cold reads, animated and playful voices, genderless/androgynous characters, grounded, rural, or gritty vibes, and youthful-sounding voices in particular.</p>
                         
                     <p>&emsp;Chloe is LGBT/LGBTQ+ and biracial, and is particularly interested in projects that support equality and diversity.</p>
                         
                     <p>&emsp;Their voice profile has been described as: Bright, Engaging, Fun, Warm, Feminine, Calming, Real, Believable, Upbeat, Sultry, Humorous, Grounded, Androgynous, Exciting, Natural, Playful, Clear, and Conversational.</p>
-                    <a href="ChloeResume.pdf" download="ChloeBundtResume.pdf">
+                </div>
+
+                    <div class="image2">
+                        <img src="/public/KoreTopPic2.jpg">
+                    </div>         
+                </div>
+            </div>
+            <div class="subcontain resume">
+                    <a href="public/ChloeResume.pdf" download="ChloeBundtResume.pdf">
                         <button class="download-button">Download Resume</button>
                     </a>
                     </div>
-                    <div class="image2">
-                        <img src="KoreTopPic2.jpg">
-                    </div>     
-                </div>           
-            </div>  
-        </div>
+                    
+        
         <div class="indexbody">
             <div class="demostudio">
                 <div class="demos" id="demos">
@@ -59,19 +71,19 @@
                     </h1> 
                     <h2> Commercial Demo</h2>
                     <audio controls>
-                        <source src="commercialdemo.wav" type="audio/mpeg">
+                        <source src="/public/commercialdemo.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>
                 
                     <h2> Animation Demo</h2>
                     <audio controls>
-                        <source src="animationdemo.wav" type="audio/mpeg">
+                        <source src="/public/animationdemo.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>             
                 </div>
                 <div class = "studio" id="studio">                    
                     <div class="studioimage">
-                        <img src="studiopic.jpg">
+                        <img src="/public/studiopic.jpg">
                     </div>
                     <div class="studiotext">
                         <h1> Studio Setup:</h1>
@@ -81,59 +93,59 @@
                         <p>Source Connect Ready, 1Gbps Upload and Download Internet Speeds</p>
                         <h2> Studio Sample:</h2>
                     <audio controls>
-                        <source src="StudioSample.wav" type="audio/mpeg">
+                        <source src="/public/StudioSample.wav" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>
                     </div>                    
                 </div>
             </div>
-            <div class="photo-reel-container">              
+            <div class="photo-reel-container">
                 <div class="photo-reel" id="photo">
-                    <div class="photo"><img src="marvel.png" alt="Marvel Logo"></div>
-                    <div class="photo"><img src="DisneyJr.png" alt="DisneyJr Logo"></div>
-                    <div class="photo"><img src="marvelsnap.png" alt="Marvel Snap Logo"></div>
-                    <div class="photo"><img src="dislyte.png" alt="Dislyte Logo"></div>
-                    <div class="photo"><img src="moneygram.png" alt="Money Gram Logo"></div>
-                    <div class="photo"><img src="rocketmortgage.png" alt="Rocket Mortgage Logo"></div>
-                    <div class="photo"><img src="traveloregon.png" alt="Travel Oregon Logo"></div>
-                    <div class="photo"><img src="convoyofhope.png" alt="Convoy of Hope Logo"></div>
-                    <div class="photo"><img src="babybus.png" alt="BabyBus Logo"></div>
-                    <div class="photo"><img src="CTIA_logo.svg.png" alt="CTIA Logo"></div>
+                    <div class="photo"><img src="/public/marvel.png" alt="Marvel Logo"></div>
+                    <div class="photo"><img src="/public/DisneyJr.png" alt="DisneyJr Logo"></div>
+                    <div class="photo"><img src="/public/marvelsnap.png" alt="Marvel Snap Logo"></div>
+                    <div class="photo"><img src="/public/dislyte.png" alt="Dislyte Logo"></div>
+                    <div class="photo"><img src="/public/moneygram.png" alt="Money Gram Logo"></div>
+                    <div class="photo"><img src="/public/rocketmortgage.png" alt="Rocket Mortgage Logo"></div>
+                    <div class="photo"><img src="/public/traveloregon.png" alt="Travel Oregon Logo"></div>
+                    <div class="photo"><img src="/public/convoyofhope.png" alt="Convoy of Hope Logo"></div>
+                    <div class="photo"><img src="/public/babybus.png" alt="BabyBus Logo"></div>
+                    <div class="photo"><img src="/public/CTIA_logo.svg.png" alt="CTIA Logo"></div>
                 </div>
             </div>
             <div class="recentroles"> 
                 <h1>Interactive & Animation</h1>
                 <div class="role-container">
                     <div class="role">
-                        <img src="Jubilee.jpg" alt="Jubilee - Marvel Snap (Mobile Game)">
+                        <img src="/public/Jubilee.jpg" alt="Jubilee - Marvel Snap (Mobile Game)">
                         <p> Jubilee - Marvel Snap</p>
                     </div>           
                     <div class="role">
-                        <img src="Millinia.png" alt="Millenia - Gales of Nayeli">
+                        <img src="/public/Millinia.png" alt="Millenia - Gales of Nayeli">
                         <p>Millenia - Gales of Nayeli</p>
                     </div>
                     <div class="role">
-                        <img src="MeyChen.jpg" alt="Mey Chen - Evelynne Doom (Animation)">
+                        <img src="/public/MeyChen.jpg" alt="Mey Chen - Evelynne Doom (Animation)">
                         <p> Mey Chen - Evelynne Doom</p>
                     </div>                                              
                 </div>
                 <div class="role-container">
                     <div class="role">
-                        <img src="JingWei.png" alt="Jing Wei - Dislyte (Mobile Game)">
+                        <img src="/public/JingWei.png" alt="Jing Wei - Dislyte (Mobile Game)">
                         <p> Jing Wei - Dislyte</p>
                     </div>  
                     <div class="role">
-                        <img src="Lindsey.png" alt="Lindsey - Clam Man 2: Headliner (RPG)">
+                        <img src="/public/Lindsey.png" alt="Lindsey - Clam Man 2: Headliner (RPG)">
                         <p> Lindsey - Clam Man 2: Headliner</p>
                     </div>                    
                 </div>
                 <div class="role-container"> 
                     <div class="role">
-                        <img src="mina.png" alt="Mina - Alariel's Blessing (JRPG)">
+                        <img src="/public/mina.png" alt="Mina - Alariel's Blessing (JRPG)">
                         <p> Mina - Alariel's Blessing</p>
                     </div>
                     <div class="role">
-                        <img src="nathan.png" alt="Nathan - Christmas Fables 2 (Interactive)">
+                        <img src="/public/nathan.png" alt="Nathan - Christmas Fables 2 (Interactive)">
                         <p> Nathan - Christmas Fables 2</p>
                     </div>
                 </div>
@@ -143,21 +155,21 @@
                 <div class="video-role-container">
                     <div class="rolemp4">
                         <video width="300" height="540" controls>
-                            <source src="traveloregon.mp4" type="video/mp4">
+                            <source src="/public/traveloregon.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p>Rosa - Travel Oregon</p>
                     </div>
                     <div class="roleyt">
-                        <iframe width="500" height="270" src="https://www.youtube.com/embed/WHBkHywajeM"></iframe> 
+                        <iframe src="https://www.youtube.com/embed/WHBkHywajeM"></iframe> 
                         <p> Bo - Disney Junior's Firebuds</p> 
                         <audio controls>
-                            <source src="CITA-PSA-30-V03---Final.mp3" type="audio/mpeg">
+                            <source src="/public/CITA-PSA-30-V03---Final.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         </audio>
                         <p>CITA Distracted Driving Radio Ad</p>
                         <audio controls>
-                            <source src="911_DV_radio_spot_Final.mp3" type="audio/mpeg">
+                            <source src="/public/911_DV_radio_spot_Final.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                         </audio>    
                         <p>Ulster County Political Ad</p> 
@@ -166,10 +178,9 @@
             </div>
             <div class="contact-section" id="Contact">
                 <h2>Contact</h2>
-                <ul>
-                    <li><strong>Name:</strong> Chloe Mei-li Bundt</li>
-                    <li><strong>Email:</strong> ChloeBundt@gmail.com</li>
-                </ul>
+                    <div><strong>Name:</strong> Chloe Mei-li Bundt</div>
+                    <div><strong>Email:</strong> <a href="mailto:ChloeBundt@gmail.com" class="email">ChloeBundt@gmail.com ↗</a>
+                </div>
             </div>
         </div>
 
