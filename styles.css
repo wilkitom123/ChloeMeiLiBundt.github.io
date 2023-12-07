@@ -1,4 +1,4 @@
-body{
+body {
     background: rgb(56, 54, 54);
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1280px;
@@ -11,8 +11,9 @@ body{
     align-items: center;
 
 }
+
 /* Header */
-header{
+header {
     background: rgb(56, 54, 54);
     width: 100%;
     height: 75px;
@@ -22,24 +23,37 @@ header{
     justify-content: center;
 
 }
-.icon a{
+
+.icon a {
     text-decoration: none;
     color: white;
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
 }
-audio{
+
+.icon {
+    width: 60%;
+}
+
+audio {
     border: 1px solid grey;
     border-radius: 30px;
 }
-header nav a{
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: grey;
     transform: scale(1.05, 1.05);
     -webkit-transform: scale(1.05, 1.05);
@@ -47,14 +61,16 @@ header nav a:hover{
     -ms-transform: scale(1.05, 1.05);
     -o-transform: scale(1.05, 1.05);
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 0 20px 0 0;
+    align-self: right;
+    width: 47%;
 }
 
-header nav ul li{
+header nav ul li {
     list-style: none;
     margin: 0 20px 0 0;
 }
@@ -82,7 +98,7 @@ header nav ul li{
     font-size: 1.5rem;
 }
 
-footer{
+footer {
     background: rgb(56, 54, 54);
     color: grey;
     font-size: 12px;
@@ -102,7 +118,7 @@ footer{
     background-color: rgb(56, 54, 54);
 }
 
-.subcontain{
+.subcontain {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -113,7 +129,20 @@ footer{
 
 }
 
-.text{
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 2rem;
+    width: auto;
+    color: white;
+    margin-top: 200px;
+}
+
+.text2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,25 +153,35 @@ footer{
     width: auto;
     color: white;
 }
-.image2{
-    margin-top: 130px;
+
+.image2 {
+    margin-top: 40px;
     width: auto;
 }
-.image{
+
+.image {
     margin-top: 180px;
     width: auto;
 }
-.container  img{
+
+.container img {
     max-width: 400px;
     border-radius: 8px;
 }
-.indexbody{
+
+.indexbody {
     max-width: 100%;
 }
-.demos{
+
+.demos {
+    text-align: center;
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35%;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -150,6 +189,7 @@ footer{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
 .studio {
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
@@ -164,29 +204,36 @@ footer{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-.studio img{
+
+.studio img {
     margin-left: 15px;
     max-width: 300px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
-.demostudio{
+
+.demostudio {
     display: inline-flex;
     width: 100%;
 }
-.studioimage{
-    margin-top: 2%;
+
+.studioimage {
     margin-bottom: 2%;
 }
-.studiotext{
+
+.studiotext {
+    margin-top:2%;
     margin-left: 9px;
     font-size: 18px;
+    text-align: center;
 }
+
 .photo-reel-container {
-    width: 100%; /* Set your desired width */
+    width: 100%;
+    /* Set your desired width */
     overflow: hidden;
     padding: 0px;
-    box-shadow: inset 15px 0 10px  rgba(0, 0, 0, 0.5), inset -15px 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 15px 0 10px rgba(0, 0, 0, 0.5), inset -15px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .photo-reel {
@@ -194,8 +241,9 @@ footer{
     margin-bottom: 10px;
     white-space: nowrap;
     animation: scroll 20s linear infinite;
-    
+
 }
+
 .photo {
     display: inline-block;
     margin: 10px;
@@ -203,42 +251,50 @@ footer{
     height: 200px;
     overflow: hidden;
 }
+
 .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
+
 @keyframes scroll {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-290%);
     }
 }
-.recentroles{
+
+.recentroles {
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     width: 100%;
     text-align: center;
     border-radius: 8px;
 }
-.role-container{
+
+.role-container {
     display: inline-flex;
 }
-.role{ 
+
+.role {
     width: 320px;
     padding: 10px;
     text-align: center;
-    
+
 }
-.role img{
+
+.role img {
     width: 100%;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
-.exampleroles{
+
+.exampleroles {
     margin-top: 50px;
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
@@ -246,27 +302,30 @@ footer{
     border-radius: 8px;
     text-align: center;
 }
-.video-role-container{
+
+.video-role-container {
     display: inline-flex;
 }
-.rolemp4{
-    margin: 50px;
-}
-.roleyt{
+
+.roleyt {
     margin: 50px 50px 50px 50px;
 }
-.roleyt audio{
+
+.roleyt audio {
     margin-top: 50px;
 }
-.Contact-Section{
+
+.Contact-Section {
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     margin: 20px;
     width: 100%;
 }
-.contactimage img{
+
+.contactimage img {
     width: 100%;
 }
+
 .contact-section {
     margin: 40px auto;
     padding: 20px;
@@ -276,22 +335,27 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .contact-section h2 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .contact-section ul {
     list-style: none;
     padding: 0;
 }
+
 .contact-section li {
     margin-bottom: 10px;
     text-align: center;
 }
+
 .contact-section strong {
     font-weight: bold;
 }
+
 .download-button {
     display: inline-block;
     padding: 10px 20px;
@@ -313,62 +377,82 @@ footer{
 
 /* Media Queries */
 
-@media screen and (max-width: 1000px){
-    .subcontain{
+@media screen and (max-width: 1000px) {
+    .subcontain {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .subsubcontain{
-        display: block;
+
+    .subcontain:nth-child(2) {
+        flex-direction: column;
     }
-    .demos{
+
+    .demos {
+        width: fit-content;
+    }
+
+    .studio {
         width: 100%;
     }
-    .studio{
-        width: 100%;
-    }
-    .studio img{
+
+    .studio img {
         margin-left: 0px;
         max-width: 100%;
     }
-    .text{
+
+    .text1 {
+        margin-top: 60px;
+    }
+
+    .text2 {
         margin: 0px;
     }
-    .image{
+
+    .image {
         margin-top: 0px;
     }
-    .image2{
+
+    .image2 {
         margin-top: 0px;
     }
-    .rolemp4{
+
+    .rolemp4 {
         margin: 0px;
     }
-    .roleyt{
-        margin: 0px;
+
+    .roleyt {
+        margin: 50px;
     }
-    .roleyt audio{
+
+    .roleyt audio {
         margin-top: 0px;
     }
-    .role-container{
+
+    .role-container {
         display: block;
     }
-    .role{
+
+    .role {
         width: 100%;
     }
-    .role img{
+
+    .role img {
         width: 100%;
     }
+
     @keyframes scroll {
         0% {
             transform: translateX(100%);
         }
+
         100% {
             transform: translateX(-380%);
         }
     }
 }
+
 @media screen and (max-width: 768px) {
     .main-content {
         flex-direction: column;
@@ -377,47 +461,61 @@ footer{
         width: 100%;
         padding: 0 1rem;
     }
-    .icon a{
+
+    .icon a {
         font-size: 2rem;
     }
-    .demos{
+
+    .demos {
         width: 100%;
     }
-    .studio{
+
+    .studio {
         width: 100%;
     }
-    .studio img{
+
+    .studio img {
         margin-left: 0px;
         max-width: 100%;
     }
-    .text{
+
+    .text {
         margin: 0px;
     }
-    .image{
+
+    .image {
         margin-top: 0px;
     }
-    .image2{
+
+    .image2 {
         margin-top: 0px;
     }
-    .rolemp4{
+
+    .rolemp4 {
         margin: 0px;
     }
-    .roleyt{
+
+    .roleyt {
         margin: 0px;
     }
-    .roleyt audio{
+
+    .roleyt audio {
         margin-top: 0px;
     }
-    .role{
+
+    .role {
         width: 100%;
     }
-    .role img{
+
+    .role img {
         width: 100%;
     }
+
     @keyframes scroll {
         0% {
             transform: translateX(100%);
         }
+
         100% {
             transform: translateX(-590%);
         }
@@ -429,6 +527,7 @@ footer{
         margin: 0;
         margin-top: 50px;
     }
+
     .main-content {
         flex-direction: column;
         justify-content: center;
@@ -436,7 +535,8 @@ footer{
         width: 100%;
         padding: 0 1rem;
     }
-    .subsubcontain{
+
+    .subsubcontain {
         display: block;
     }
 
@@ -444,14 +544,15 @@ footer{
         margin: 1rem 0;
     }
 
-    .demostudio{
+    .demostudio {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 1rem;
     }
-    .demos{
+
+    .demos {
         width: 100%;
         padding: 0;
         margin-bottom: 1rem;
@@ -459,28 +560,34 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    .icon a{
+
+    .icon a {
         font-size: 1.5rem;
     }
-    .studio{
+
+    .studio {
         width: 100%;
     }
-    .studio img{
+
+    .studio img {
         margin-left: 0px;
         max-width: 100%;
     }
-    .text{
-        margin: 0 0 10px 0; 
+
+    .text {
+        margin: 0 0 10px 0;
         padding: 10px;
     }
 
     .text h2 {
         font-size: 2.5rem;
     }
-    .image{
+
+    .image {
         margin-top: 0px;
     }
-    .image2{
+
+    .image2 {
         margin-top: 0px;
     }
 
@@ -489,37 +596,44 @@ footer{
         flex-direction: column;
         align-items: center;
         height: fit-content;
-    } 
-    .rolemp4{
+    }
+
+    .rolemp4 {
         margin: 0px;
     }
-    .roleyt{
+
+    .roleyt {
         margin: 0px;
         height: fit-content;
     }
-    iframe{
+
+    iframe {
         aspect-ratio: 16/9;
     }
-    .roleyt audio{
+
+    .roleyt audio {
         margin-top: 0px;
     }
-    .role-container{
+
+    .role-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    .role{
+
+    .role {
         width: fit-content;
 
     }
-    .role img{
+
+    .role img {
         width: 100%;
     }
 
     .video-role-container {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
         height: fit-content;
     }
 
@@ -530,13 +644,15 @@ footer{
     .roleyt iframe {
         width: 100%;
     }
+
     @keyframes scroll {
         0% {
             transform: translateX(100%);
         }
+
         100% {
             transform: translateX(-940%);
         }
     }
-    
+
 }
