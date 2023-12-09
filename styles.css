@@ -305,20 +305,32 @@ footer {
 
 .video-role-container {
     display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
-
-.roleyt {
-    margin: 50px 50px 50px 50px;
+.audio-role-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.audio-row{
+    display: flex;
+    justify-content: center;
+}
+.audio-role{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+iframe{
+    width: 500px;
+    height: 282px;
 }
 
 .rolemp4{
-    margin-top: 70px;
-}
-.Contact-Section {
-    border: 1px solid #ccc;
-    background-color: rgb(235, 234, 234);
-    margin: 20px;
-    width: 100%;
+    margin-right: 70px;
 }
 
 .contactimage img {
@@ -326,8 +338,9 @@ footer {
 }
 
 .contact-section {
+    padding-bottom: 20px;
+    width: 100%;
     margin: 40px auto;
-    padding: 20px;
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     border-radius: 8px;
@@ -417,10 +430,6 @@ footer {
         margin-top: 0px;
     }
 
-    .roleyt {
-        margin: 50px;
-    }
-
     .roleyt audio {
         margin-top: 0px;
     }
@@ -429,6 +438,17 @@ footer {
         display: block;
     }
 
+    iframe{
+        width: 400px;
+        height: 222px;
+    }
+    .rolemp4{
+        margin-right: 30px;
+    }
+    video{
+        width: 285px;
+        height: 505px;
+    }
     .role {
         width: 100%;
     }
@@ -518,6 +538,10 @@ footer {
     .role {
         width: 100%;
     }
+
+    .audio-row{
+        flex-direction: column;
+    }
     .exampleroles {
         display: flex;
         flex-direction: column;
@@ -528,6 +552,9 @@ footer {
         display: flex;
         flex-direction: column;
         height: fit-content;
+    }
+    .audio-role{
+        margin: 0 auto;
     }
     .role img {
         width: 100%;
@@ -632,15 +659,14 @@ footer {
         margin: 0px;
         height: fit-content;
     }
-
-    iframe {
-        aspect-ratio: 16/9;
+    audio {
+        margin:0 auto;
+        max-width: 300px;
+        width: 100%;
     }
-
-    .roleyt audio {
-        margin-top: 0px;
+    .audio-role{
+        width: 100%;
     }
-
     .role-container {
         display: flex;
         flex-direction: column;
@@ -662,13 +688,24 @@ footer {
         flex-direction: column;
         height: fit-content;
     }
-
-    .rolemp4 {
-        margin: 0;
+    iframe{
+        margin:10px;
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16/9;
     }
-
-    .roleyt iframe {
+    .rolemp4 {
+        margin: 10px;
+    }
+    .fixed-navbar {
+        margin: 0px;
+        width: 90%;
+    }
+    video
+    {
+        max-width: 300px;
         width: 100%;
+        height: auto;
     }
 
     @keyframes scroll {
