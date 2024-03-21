@@ -387,6 +387,9 @@ iframe{
     background-color: rgb(66, 66, 66);
 }
 
+video{
+    margin-top: 130px;
+}
 /* Media Queries */
 
 @media screen and (max-width: 1000px) {
@@ -446,6 +449,7 @@ iframe{
         margin-right: 30px;
     }
     video{
+        margin-top: 50px;
         width: 285px;
         height: 505px;
     }
