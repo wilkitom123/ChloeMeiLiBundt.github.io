@@ -446,10 +446,9 @@ iframe{
     .rolemp4{
         margin-right: 30px;
     }
-    video{
-        margin-top: 50px;
-        width: 285px;
-        height: 505px;
+    video{        
+        width: 325px;
+        height: auto;
     }
     .role {
         width: 100%;
