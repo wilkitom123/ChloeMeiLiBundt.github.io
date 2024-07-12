@@ -240,7 +240,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     white-space: nowrap;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 
 }
 
@@ -265,7 +265,7 @@ footer {
     }
 
     100% {
-        transform: translateX(-390%);
+        transform: translateX(-790%);
     }
 }
 
@@ -387,9 +387,7 @@ iframe{
     background-color: rgb(66, 66, 66);
 }
 
-video{
-    margin-top: 130px;
-}
+
 /* Media Queries */
 
 @media screen and (max-width: 1000px) {
@@ -467,7 +465,7 @@ video{
         }
 
         100% {
-            transform: translateX(-550%);
+            transform: translateX(-1300%);
         }
     }
 }
@@ -570,7 +568,7 @@ video{
         }
 
         100% {
-            transform: translateX(-850%);
+            transform: translateX(-2100%);
         }
     }
 }
@@ -718,7 +716,7 @@ video{
         }
 
         100% {
-            transform: translateX(-1240%);
+            transform: translateX(-2500%);
         }
     }
 
