@@ -187,6 +187,7 @@ footer {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    padding-bottom: 50px;
 }
 
 .studio {
@@ -203,6 +204,7 @@ footer {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    padding-top: 110px;
 }
 
 .studio img {
@@ -408,6 +410,7 @@ iframe{
 
     .studio {
         width: 100%;
+        padding-top: 100px;
     }
 
     .studio img {
