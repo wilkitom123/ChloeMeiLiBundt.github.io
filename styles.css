@@ -137,8 +137,9 @@ footer {
     font-size: 25px;
     margin: 2rem;
     width: auto;
-    color: white;
     margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .text2 {
@@ -150,7 +151,6 @@ footer {
     font-size: 25px;
     margin: 2rem;
     width: auto;
-    color: white;
 }
 
 .image2 {
@@ -159,7 +159,6 @@ footer {
 }
 
 .image {
-    margin-top: 80px;
     width: auto;
 }
 
@@ -169,7 +168,8 @@ footer {
 }
 
 .indexbody {
-    max-width: 100%;
+    max-width: 100%;    
+    margin-top: 50px;
 }
 
 .demos {
@@ -187,9 +187,34 @@ footer {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    padding-bottom: 50px;
+    
+}
+.additionaldemoscontainer {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding-bottom: 50px;    
+    margin-top: 50px;
 }
 
+.additionaldemos{
+    display: flex;
+    flex-direction: row;
+}
+.additionaldemo{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 .studio {
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
@@ -204,7 +229,6 @@ footer {
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
-    padding-top: 110px;
 }
 
 .studio img {
@@ -221,6 +245,10 @@ footer {
 
 .studioimage {
     margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .studiotext {
@@ -228,6 +256,8 @@ footer {
     margin-left: 9px;
     font-size: 18px;
     text-align: center;
+    
+    padding-top: 110px;
 }
 
 .photo-reel-container {
@@ -272,6 +302,7 @@ footer {
 }
 
 .recentroles {
+    margin-top: 50px;
     border: 1px solid #ccc;
     background-color: rgb(235, 234, 234);
     width: 100%;
@@ -304,6 +335,13 @@ footer {
     border-radius: 8px;
     text-align: center;
 }
+.exampleroles1 {
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+}
 .testimonials {
     margin-top: 50px;
     border: 1px solid #ccc;
@@ -325,6 +363,62 @@ footer {
 .testimonial p{
     font-style: italic;
     font-size: larger;
+}
+.representations {
+    border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.representationsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.intro{border: 1px solid #ccc;
+    background-color: rgb(235, 234, 234);
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+
+.representationcolumn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: auto;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.representation{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    max-width: 365px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.representation img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 .video-role-container {
@@ -404,7 +498,6 @@ iframe{
     font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin: 20px 0;
 }
 
 .download-button:hover {
@@ -433,7 +526,28 @@ iframe{
 
 /* Media Queries */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
+    .representationcolumn{
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+        padding: 0.75rem;
+    }
+
+    .representation{
+        width: 100%;
+        min-width: auto;
+        max-width: 720px;
+        margin-bottom: 1rem;
+    }
+header nav ul{
+        display: none;
+        width: 0%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
     .subcontain {
         flex-direction: column;
         justify-content: center;
@@ -501,6 +615,12 @@ iframe{
     .role img {
         width: 100%;
     }
+    .additionaldemos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 
     @keyframes scroll {
         0% {
@@ -513,7 +633,7 @@ iframe{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .main-content {
         flex-direction: column;
         justify-content: center;
@@ -593,6 +713,12 @@ iframe{
         align-items: center;
         height: fit-content;
     }
+    .exampleroles1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
     .video-role-container {
         display: flex;
         flex-direction: column;
@@ -603,6 +729,19 @@ iframe{
     }
     .role img {
         width: 100%;
+    }
+
+    /* Stack representations on tablet/smaller screens */
+    .representationcolumn{
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+    }
+
+    .representation{
+        width: 100%;
+        min-width: auto;
+        max-width: 720px;
     }
 
     @keyframes scroll {
@@ -654,6 +793,17 @@ iframe{
         flex-direction: column;
         align-items: center;
     }
+    .additionaldemoscontainer{
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .additionaldemos{
+        width: 100%;
+    }
     .studio {
         width: 100%;
         padding: 5px;
@@ -695,7 +845,12 @@ iframe{
         align-items: center;
         height: fit-content;
     }
-
+    .exampleroles1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
     .rolemp4 {
         margin: 0px;
     }
@@ -751,6 +906,21 @@ iframe{
         max-width: 300px;
         width: 100%;
         height: auto;
+    }
+
+    /* Small screens: representations stack and become full width */
+    .representationcolumn{
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+        padding: 0.5rem;
+    }
+
+    .representation{
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
 
     @keyframes scroll {
